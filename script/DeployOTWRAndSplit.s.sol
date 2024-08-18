@@ -3,7 +3,7 @@ pragma solidity 0.8.19;
 
 import "forge-std/Script.sol";
 import {OptimisticTokenWithdrawalRecipientFactory} from "src/owr/token/OptimisticTokenWithdrawalRecipientFactory.sol";
-import {ISplitMain, SplitConfiguration} from "src/interfaces/ISplitMain.sol";
+import {ISplitMain, SplitConfiguration} from "src/interfaces/external/splits/ISplitMain.sol";
 import {SplitterConfiguration} from "./SplitterConfiguration.sol";
 
 contract DeployOTWRAndSplit is Script, SplitterConfiguration {
